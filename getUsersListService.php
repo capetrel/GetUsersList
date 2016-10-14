@@ -20,7 +20,7 @@ if(!empty($_POST['submit'])){
 
     echo $view.'<br>';
 
-    echo '<a href="<?=HOST?>/cc-content/plugins/GetUsersList/files/liste-utilisateurs.csv" title="Liste des utilisateurs">Cliquer ici pour lancer le téléchargement du fichier</a>';
+    echo '<a href="../cc-content/plugins/GetUsersList/files/liste-utilisateurs.csv" title="Liste des utilisateurs">Cliquer ici pour lancer le téléchargement du fichier</a>';
 
 // Sinon il n'y a pas de post
 }else{
