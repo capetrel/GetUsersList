@@ -1,0 +1,17 @@
+<div class="block">
+
+    <h1>Ce plugin permet de récupérer la liste des membres enregistrés.</h1>
+        <p>
+            Le fichier contiendra le nom d'utilisateur et le mail.
+        </p>
+    <form method="post">
+        <div class="form-group select-file <?=(isset ($error)) ? 'has-error' : ''?>">
+            <label class="control-label">Le fichier sera au format ".csv" :</label>
+            <br>
+            <input type="submit" class="button button-upload" name="submit" value="Générer le fichier" />
+        </div>
+    </form>
+
+    <?php include(dirname(__FILE__) . '/getUsersListService.php') ?>
+
+</div>
